@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+span {
+  color: #fff;
+}
+p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+#content {
+  background-color: #1a1a1a;
+  width: 83%;
+  position: relative;
+  left: 17%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/*nav*/
+#main-nav {
+  background-color: #000000;
+  width: 17%;
+  height: 100vh;
+  position: fixed;
+  padding: 20px 10px;
+}
+.w-100 {
+  width: 100%;
+}
+#main-nav .logo {
+  width: 65%;
+  margin-bottom: 30px;
+}
+#main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+#main-nav ul li {
+  display: block;
+  padding: 12px;
+}
+#main-nav ul li.active {
+  background-color: #282828;
+  border-radius: 2px;
+}
+#main-nav ul li i {
+  margin-right: 10px;
+  font-size: 22px;
+}
+.nav-list {
+  margin-bottom: 20px;
+}
+.user-list {
+  margin-bottom: 5px;
+}
+#main-nav .line {
+  border: 0;
+  border-top: 2px solid #282828;
+}
+.install {
+  position: relative;
+  top: 200px;
+}
+/*Main Section */
+.trending-now {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 20px;
+}
+
+.trending-now > * {
+  background-color: #181818;
+  padding: 15px;
+  transition: 1s;
+}
+.trending-now > *:hover {
+  background-color: #282828;
+}
+#content h2 {
+  color: #fff;
+  padding: 15px 20px;
+}
+#content span {
+  font-size: 16px;
+  font-weight: bold;
+}
+#content .trending-now img {
+  margin-bottom: 20px;
+}
+#content .trending-now p {
+  margin-top: 10px;
+}
+.trending-now .image {
+  position: relative;
+}
+.trending-now .image .play {
+  border: none;
+  border-radius: 50%;
+  background-color: #1db954;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: -15%;
+  right: 10px;
+  transition: 0.8s;
+  opacity: 0;
+}
+.image:hover .play {
+  opacity: 1;
+  bottom: 35px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #282828;
+  height: 2px;
+}
